@@ -3,247 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us - Higa Model Boarding School</title>
+    
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
-
-    <script src="navbar.js"></script>
-
-    <style>
- 
-    </style>
+    <script src="navbar.js" defer></script>
 </head>
 <body>
 
-
-
-
-
-
+    <!-- Navigation Bar -->
     <nav class="nav-container">
         <ul class="nav-items">
-    
-            <li class="items logo-item"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            <li class=" small-logo"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            
-    
-            <li class="items about-container max-items"> 
-    
-                <a href="about.html"> About us </a>
-                
+            <li class="items logo-item"> 
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="Higa School Logo"></a> 
             </li>
-    
-            <li class="items max-items"> <a href="academics.html"> Academics </a> </li>
-    
-            <li class="items gallery-container max-items"> 
-    
-                <a href="students.html"> Students </a> 
-    
+            <li class="small-logo"> 
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="Higa School Logo"></a> 
             </li>
-    
-            <li class="items max-items"> <a href="contact.html"> Contact us </a> </li>
-    
-            <li class="items max-items"> <button  onclick="goToDonatePage()"> Donate </button> </li>
-    
-            <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            
-    
+
+            <li class="items about-container max-items"><a href="about.html">About us</a></li>
+            <li class="items max-items"><a href="academics.html">Academics</a></li>
+            <li class="items gallery-container max-items"><a href="students.html">Students</a></li>
+            <li class="items max-items"><a href="contact.html">Contact us</a></li>
+            <li class="items max-items"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
+
+            <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#2d3748">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
         </ul>
-    
-        <!-- This is code fot navbar of the smaller devices -->
-    
+
+        <!-- Mobile Side Drawer -->
         <ul class="side-bar-container">
-    
-            <li class="side-items "> <a href="about.html"> About us </a> </li>
-    
-            <li class="side-items "> <a href="academics.html"> Academics </a> </li>
-    
-            <li class="side-items "> <a href="students.html"> Students </a> </li>
-    
-            <li class="side-items "> <a href="contact.html"> Contact us </a> </li>
-    
-            <li class=" items donate-button"> <button onclick="goToDonatePage()"> Donate </button> </li>
-    
-    
+            <li class="side-items"><a href="about.html">About us</a></li>
+            <li class="side-items"><a href="academics.html">Academics</a></li>
+            <li class="side-items"><a href="students.html">Students</a></li>
+            <li class="side-items"><a href="contact.html">Contact us</a></li>
+            <li class="side-items donate-button"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
         </ul>
-    
-    
     </nav>
-    
 
+    <!-- Main Content -->
+    <main class="contact-main">
 
+        <!-- Page Header -->
+        <header class="contact-header">
+            <h1>Contact Us</h1>
+            <div class="heading-divider"></div>
+            <p class="contact-intro">We are here to help! Whether you have questions about admissions, school programs, or campus facilities, please feel free to reach out to us.</p>
+        </header>
 
+        <section class="contact-grid">
 
-
-
-
-
-
-
-
-
-    <div class="cont-header">
-        <h1> Contact us</h1>
-    </div>
-
-
-    <div class="contact-1">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam repudiandae nulla, mollitia laudantium maiores incidunt quae ipsum facere sequi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis, ipsum aliquid temporibus quidem eligendi quae perferendis veniam unde dolor.</p>
-    </div>
-
-
-    <div class="contact-cont">
-
-        <div class="contact-cont-1">
-
-            <div class="contact-3list">
-                <div class="contact-2">
-                    <div class="contact-2-1">
-                        <img src="./svg/home_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-                        
-                    </div>
-            
-                    <div class="contact-2-2">
-                        <h3> Address</h4>
-                        <p> Durame, Centeral Ethiopia, Ethiopia </p>
-                    </div>
-            
+            <!-- Contact Information Card -->
+            <div class="contact-info-card">
+                <h2>Get in Touch</h2>
                 
-                </div>
-            
-                <div class="contact-3">
-                    <div class="contact-3-1">
-                        <img src="./svg/call_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <img src="./svg/home_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Address Icon">
                     </div>
-            
-                    <div class="contact-3-2">
-                        <h3> Phone </h3>
-                        <p>+251912345678</p>
+                    <div class="info-details">
+                        <h3>Address</h3>
+                        <p>Durame, Central Ethiopia, Ethiopia</p>
                     </div>
                 </div>
-            
-                <div class="contact-4">
-                    <div class="contact-4-1">
-                        <img src="./svg/mail_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <img src="./svg/call_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Phone Icon">
                     </div>
-            
-                    <div class="contact-4-2">
-                        <h3> Email </h3>
+                    <div class="info-details">
+                        <h3>Phone</h3>
+                        <p>+251 912 345 678</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <img src="./svg/mail_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Email Icon">
+                    </div>
+                    <div class="info-details">
+                        <h3>Email</h3>
                         <p>hmbs@gmail.com</p>
                     </div>
                 </div>
             </div>
 
-        </div>
-    
-    
-        <div class="container">
-            <h1>Contact Us</h1>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Contact Form Container -->
+            <div class="contact-form-card">
+                <h2>Send Us a Message</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="55fa5bfc-9c4c-402f-a81d-9d87433b75bc">
 
-                <input type="hidden" name="access_key" value="55fa5bfc-9c4c-402f-a81d-9d87433b75bc">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required rows="10"></textarea>
-    
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-        </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
 
-    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
 
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
 
+        </section>
 
+    </main>
 
-
-
-
-
-
-
-
+    <!-- Footer -->
     <footer>
-
         <div class="fot-1">
-
             <div class="fot-1-1">
-                <img src="./Higa web resource/small logo.png" alt="" width="70px">
-                <h3> Higa Model Boarding School</h3>
-                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="" width="70px">
+                <img src="./Higa web resource/small logo.png" alt="Higa Logo" width="65px">
+                <h3>Higa Model Boarding School</h3>
+                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="Gogota Logo" width="65px">
             </div>
 
             <div class="fot-1-2">
                 <p>
-                    Higa Model Boarding School is a project of Gogota care, not-for-profit organization. Higa Model Boarding School is one of the highest achieving secondary school in Central Ethiopia, Ethiopia. Our school is knows by its model students in our school and qualified teaching-learning activities with qualified teachers in our zone.
+                    Higa Model Boarding School is a project of Gogota Care, a non-profit organization. We are one of the highest achieving secondary schools in Central Ethiopia, known for high academic standards and qualified teaching staff.
                 </p>
             </div>
-
         </div>
 
         <div class="fot-cont">
-
-            
-
             <div class="fot-2 fot">
-                <h4> About us </h4>
-
-                <p> <a href="#"> Who are we? </a></p>
-                <p> <a href="#"> Our History </a></p>
-                <p> <a href="#"> Mission </a> </p>
-                <p> <a href="#"> Vision </a></p>
-                <p> <a href="#"> Values </a></p>
+                <h4>About us</h4>
+                <p><a href="#">Who are we?</a></p>
+                <p><a href="#">Our History</a></p>
+                <p><a href="#">Mission</a></p>
+                <p><a href="#">Vision</a></p>
+                <p><a href="#">Values</a></p>
             </div>
 
             <div class="fot-3 fot">
-                <h4> Academics </h4>
-
-                <p> <a href="#"> Our School </a> </p>
-                <p> <a href="#"> Academic focus </a></p>
-                <p> <a href="#"> Curriculum </a> </p>
-                <p> <a href="#"> Our students </a> </p>
-                <p> <a href="#"> Beyond our Academics </a></p>
+                <h4>Academics</h4>
+                <p><a href="#">Our School</a></p>
+                <p><a href="#">Academic focus</a></p>
+                <p><a href="#">Curriculum</a></p>
+                <p><a href="#">Our students</a></p>
+                <p><a href="#">Beyond Academics</a></p>
             </div>
 
             <div class="fot-4 fot">
-                <h4> Discover our school </h4>
-
-                <p> <a href="#"> achievements</a> </p>
-                <p> <a href="#"> recent news </a></p>
-
-                
+                <h4>Discover</h4>
+                <p><a href="#">Achievements</a></p>
+                <p><a href="#">Recent News</a></p>
             </div>
         </div>
 
         <div class="fot-5">
-
-            <h4> Get us on </h4>
-            <a href="#" class="fot2">
-                <svg width="35px" height="35px" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>email [#1572]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" id="email-[#1572]"> </path> </g> </g> </g> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>telegram</title> <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path> </g></svg>
-            </a>
-
+            <h4>Get Us On</h4>
+            <div class="social-links">
+                <a href="#" class="fot2" title="Email Us">
+                    <svg width="28px" height="28px" viewBox="0 -2.5 20 20" fill="#ffffff"><g><path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" transform="translate(-284.000000, -762.000000)"></path></g></svg>
+                </a>
+                <a href="#" class="fot2" title="Facebook">
+                    <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 24 24"><path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path></svg>
+                </a>
+                <a href="#" class="fot2" title="Telegram">
+                    <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 32 32"><path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path></svg>
+                </a>
+            </div>
         </div>
 
-        <br> <br>
-
-        <p class="copyright"> &copy; 2025 Higa Model Boarding School. All rights reserved.</p>
-
+        <p class="copyright">&copy; 2025 Higa Model Boarding School. All rights reserved.</p>
     </footer>
-    
+
 </body>
 </html>

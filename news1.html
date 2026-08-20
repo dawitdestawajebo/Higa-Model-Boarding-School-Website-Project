@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Detail | Higa Model Boarding School</title>
+    <link rel="stylesheet" href="news1.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <ul class="nav-items">
+            <li class="items logo-item">
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="HMBS Logo"></a>
+            </li>
+            <li class="small-logo">
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="HMBS Logo"></a>
+            </li>
+            <li class="items about-container max-items"><a href="about.html">About us</a></li>
+            <li class="items max-items"><a href="academics.html">Academics</a></li>
+            <li class="items gallery-container max-items"><a href="students.html">Students</a></li>
+            <li class="items max-items"><a href="contact.html">Contact us</a></li>
+            <li class="items max-items"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
+
+            <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </ul>
+
+        <!-- Mobile Sidebar -->
+        <ul class="side-bar-container">
+            <li class="side-items"><a href="about.html">About us</a></li>
+            <li class="side-items"><a href="academics.html">Academics</a></li>
+            <li class="side-items"><a href="students.html">Students</a></li>
+            <li class="side-items"><a href="contact.html">Contact us</a></li>
+            <li class="side-items donate-button"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="news-container">
+        
+        <article class="news-article">
+            <!-- News Title -->
+            <h1 class="news-title">Higa Model Boarding School Students Visit the Ajora Twin Waterfalls</h1>
+
+            <!-- News Text Description -->
+            <div class="news-description">
+                <p>
+                    99 Grade 12 students from Higa Model Boarding School, run by the Kembata People's Development Association, visited the scenic Ajora Twin Waterfalls located in the Hadero Tunto Zuria District of the Kembata Zone following the completion of their 2018 academic year.
+                </p>
+                <p>
+                    The trip served as an educational tour designed to give students practical insight into natural resources, eco-tourism values, and the vital importance of environmental conservation and local culture.
+                </p>
+                <p>
+                    During the visit, students experienced the surrounding natural beauty firsthand and deepened their understanding of their personal responsibility to protect natural resources for future generations. Educational field trips like this play a significant role in broadening students' knowledge, encouraging a love for nature, and boosting awareness of local tourism.
+                </p>
+                <p>
+                    The event was attended by the Executive Director and officials of the Kembata People's Development Association, members of the Higa Model Boarding School management team, participating students, and the Parent-Teacher Association (PTA) chairperson.
+                </p>
+            </div>
+
+            <!-- Dynamic Image Gallery Container (Add as many images as needed) -->
+            <section class="news-gallery">
+                <img src="./Higa web resource/News11.jpg" alt="Event Photo" class="gallery-img">
+                <img src="./Higa web resource/News12.jpg" alt="Event Photo" class="gallery-img">
+                <img src="./Higa web resource/News13.jpg" alt="Event Photo" class="gallery-img">
+                <img src="./Higa web resource/News14.jpg" alt="Event Photo" class="gallery-img">
+                <!-- Simply paste more <img> tags here for additional photos -->
+            </section>
+        </article>
+
+    </main>
+
+    <!-- Fullscreen Image Modal (Lightbox) -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="fullImage" alt="Full View">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="fot-1">
+            <div class="fot-1-1">
+                <img src="./Higa web resource/small logo.png" alt="HMBS Small Logo" width="70px">
+                <h3>Higa Model Boarding School</h3>
+                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="Gogota Logo" width="70px">
+            </div>
+            <div class="fot-1-2">
+                <p>
+                    Higa Model Boarding School is a project of Gogota Care, a non-profit organization. We are dedicated to offering high-caliber education and empowering model secondary students in Central Ethiopia.
+                </p>
+            </div>
+        </div>
+
+        <div class="fot-cont">
+            <div class="fot-2 fot">
+                <h4>About us</h4>
+                <p><a href="about.html">Who are we?</a></p>
+                <p><a href="about.html">Our History</a></p>
+                <p><a href="about.html">Mission & Vision</a></p>
+            </div>
+
+            <div class="fot-3 fot">
+                <h4>Academics</h4>
+                <p><a href="academics.html">Our School</a></p>
+                <p><a href="academics.html">Academic Focus</a></p>
+                <p><a href="academics.html">Curriculum</a></p>
+            </div>
+
+            <div class="fot-4 fot">
+                <h4>Discover</h4>
+                <p><a href="students.html">Achievements</a></p>
+                <p><a href="students.html">Students</a></p>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2025 Higa Model Boarding School. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('fullImage');
+            const closeBtn = document.querySelector('.modal-close');
+            const galleryImages = document.querySelectorAll('.gallery-img');
+
+            galleryImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    modal.style.display = 'flex';
+                    modalImg.src = img.src;
+                });
+            });
+
+            const closeModal = () => {
+                modal.style.display = 'none';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,257 +1,211 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the navbar code</title>
+    <title>About Us - Higa Model Boarding School</title>
+    
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="header.css">
-    <script src="navbar.js"> </script>
-
+    <script src="navbar.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
     <nav class="nav-container">
         <ul class="nav-items">
-
-            <li class="items logo-item"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            <li class=" small-logo"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            
-
-            <li class="items about-container max-items"> 
-
-                <a href="about.html"> About us </a> 
-                
+            <li class="items logo-item"> 
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="Higa School Logo"></a> 
+            </li>
+            <li class="small-logo"> 
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="Higa School Logo"></a> 
             </li>
 
-            <li class="items max-items"> <a href="academics.html"> Academics </a> </li>
+            <li class="items about-container max-items"><a href="about.html">About us</a></li>
+            <li class="items max-items"><a href="academics.html">Academics</a></li>
+            <li class="items gallery-container max-items"><a href="students.html">Students</a></li>
+            <li class="items max-items"><a href="contact.html">Contact us</a></li>
+            <li class="items max-items"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
 
-            <li class="items gallery-container max-items"> 
-
-                <a href="students.html"> Students </a> 
-
-            </li>
-
-            <li class="items max-items"> <a href="contact.html"> Contact us </a> </li>
-
-            <li class="items max-items"> <button onclick="goToDonatePage()"> Donate </button> </li>
-
-            <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            
-
+            <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#2d3748">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
         </ul>
 
-        <!-- This is code fot navbar of the smaller devices -->
-
+        <!-- Mobile Drawer Navigation -->
         <ul class="side-bar-container">
-
-            <li class="side-items "> <a href="about.html"> About us </a> </li>
-
-            <li class="side-items "> <a href="academics.html"> Academics </a> </li>
-
-            <li class="side-items "> <a href="students.html"> Students </a> </li>
-
-            <li class="side-items "> <a href="contact.html"> Contact us </a> </li>
-
-            <li class=" items donate-button"> <button onclick="goToDonatePage()"> Donate </button> </li>
-
-
+            <li class="side-items"><a href="about.html">About us</a></li>
+            <li class="side-items"><a href="academics.html">Academics</a></li>
+            <li class="side-items"><a href="students.html">Students</a></li>
+            <li class="side-items"><a href="contact.html">Contact us</a></li>
+            <li class="side-items donate-button"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
         </ul>
-
-
     </nav>
     
-    <!-- The main part of the about us webpage-->
-
-    <main class="aboutus-main ">
+    <!-- Main Content -->
+    <main class="aboutus-main">
 
         <div class="page-header">
-            <h1> About us </h1>
+            <h1>About Us</h1>
+            <div class="heading-divider"></div>
         </div>
 
-        
         <div class="about-cont">
 
-            <div class="about-cont-1">
-                
-                <p class="about-cont-1-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis velit doloremque voluptatum incidunt quod non delectus et quasi? Eaque non necessitatibus animi rem atque, totam, temporibus inventore tenetur voluptatibus, ducimus veniam quidem praesentium blanditiis harum quis fugiat cum maxime deserunt laudantium. Est minus et excepturi molestias consequatur earum? Quis!</p>
+            <!-- Overview Section -->
+            <section class="about-cont-1">
+                <p class="about-lead">
+                    Higa Boarding School is a high-performing secondary school located in Durame, within the Kembata Zone of the Central Ethiopia Region. Opened in 2017, it recruits top-scoring eighth-grade students from across the district and has gained national recognition for exceptional national exam results and strong STEM resources.
+                </p>
 
-                <br>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ducimus aspernatur beatae veniam corporis sint iusto, obcaecati porro maxime praesentium, ex harum nulla eius, quae quod voluptatum sapiente tenetur odit? Praesentium itaque minima debitis tempora, consequuntur reprehenderit nesciunt ipsam aliquam at voluptatem ab quasi fugiat quibusdam? Labore repudiandae temporibus a, officiis eius unde provident. Soluta illo minima nulla eos vel.</p>
+                <p>The school was established as part of an education-quality initiative led by the Kembata Development Association (KDA), formerly known in its development activities as the Kembata-Tembaro community development organization. The initiative was created in response to the growing need not only to expand access to education, but also to improve the quality of education and academic outcomes in the region. The school was envisioned as a center of excellence, where successful educational practices could be developed and later shared with other schools in the area.</p>
 
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati facilis enim ullam harum animi reiciendis temporibus, eum assumenda, sint eligendi vel non eos rem, velit accusantium necessitatibus maiores quibusdam sapiente quasi veritatis veniam. Dolorem, ducimus. Sequi, aspernatur asperiores adipisci laboriosam corporis, tenetur repudiandae blanditiis excepturi porro vitae tempora dignissimos minus? Totam sunt nisi autem molestias aut praesentium veniam quibusdam.</p>
+                <p>Higa Model Boarding School opened its doors to high-achieving students from across the Kembata-Tembaro area. Its model is designed to bring together academically strong students and provide them with a focused, supportive, and rigorous learning environment. Students are selected through an academic screening process, including an entrance examination, allowing the school to bring together students with strong academic potential from different communities and backgrounds.</p>
 
-                <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod error eligendi recusandae. Alias cumque nihil eius minus, voluptatem asperiores delectus nulla? Id nostrum libero similique? Exercitationem distinctio a architecto voluptatem modi iusto veritatis culpa ex beatae, suscipit, consequuntur est totam! At ad cumque numquam sint corporis laboriosam fuga quasi deleniti quae et, maxime natus, voluptates possimus voluptate recusandae laborum dicta!</p>
-                <br>
+                <p>The school's boarding model is an important part of its educational approach. By providing students with an environment dedicated to learning, the school seeks to give academically talented young people the opportunity to concentrate on their studies, develop their abilities, and prepare themselves for higher education and future careers. The school's original vision was to provide a rigorous four-year secondary education that would help high-performing students pursue their aspirations for university education.</p>
+            </section>
 
-            </div>
-
-            <div class="about-cont-2">
-
+            <!-- Vision, Mission & Values -->
+            <section class="about-cont-2">
                 <div class="about-cont-2-1">
-                    <h2> Our Vision, Missions and Values</h2>
-
+                    <h2>Our Vision, Mission & Values</h2>
+                    <div class="section-divider"></div>
                 </div>
 
-                <div class="about-cont-2-2">
+                <div class="about-cards-grid">
 
-                    <div class="about-cont-2-2-1">
-
-                        <svg width="95px" height="95px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 13.6394 2.42496 14.1915 3.27489 15.2957C4.97196 17.5004 7.81811 20 12 20C16.1819 20 19.028 17.5004 20.7251 15.2957C21.575 14.1915 22 13.6394 22 12C22 10.3606 21.575 9.80853 20.7251 8.70433C19.028 6.49956 16.1819 4 12 4C7.81811 4 4.97196 6.49956 3.27489 8.70433C2.42496 9.80853 2 10.3606 2 12ZM12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25Z" fill="#000000"></path> </g></svg>
-                        <h3> Our Vision </h3> <br>
-                        <h4> To be seen as an institution that produces students who are competitive nationally and internationally, with great morals and academic excellence, in fields of science and technology. </h4>
-
+                    <div class="vcard">
+                        <div class="icon-wrapper">
+                            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12Z" fill="#0e6231"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 13.6394 2.42496 14.1915 3.27489 15.2957C4.97196 17.5004 7.81811 20 12 20C16.1819 20 19.028 17.5004 20.7251 15.2957C21.575 14.1915 22 13.6394 22 12C22 10.3606 21.575 9.80853 20.7251 8.70433C19.028 6.49956 16.1819 4 12 4C7.81811 4 4.97196 6.49956 3.27489 8.70433C2.42496 9.80853 2 10.3606 2 12ZM12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25Z" fill="#0e6231"/>
+                            </svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be seen as an institution that produces students who are competitive nationally and internationally, with great morals and academic excellence, in fields of science and technology.</p>
                     </div>
 
-                    <div class="about-cont-2-2-2">
-
-                        <svg fill="#000000" height="95px" width="95px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M30.9,5.6C30.8,5.2,30.4,5,30,5h-3V2c0-0.4-0.2-0.8-0.6-0.9C26,0.9,25.6,1,25.3,1.3l-4,4C21.1,5.5,21,5.7,21,6v3.6l-5.7,5.7 c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.7-5.7H26c0.3,0,0.5-0.1,0.7-0.3l4-4C31,6.4,31.1,6,30.9,5.6z"></path> <path d="M18.1,18.1C17.6,18.7,16.8,19,16,19s-1.6-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.8-2.8C16.5,11,16.2,11,16,11 c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5c0-0.2,0-0.5-0.1-0.7L18.1,18.1z"></path> <path d="M28.1,12.1C27.6,12.7,26.8,13,26,13h-2.8l-0.7,0.7c0.3,0.7,0.4,1.5,0.4,2.3c0,3.9-3.1,7-7,7s-7-3.1-7-7s3.1-7,7-7 c0.8,0,1.6,0.2,2.3,0.4L19,8.8V6c0-0.8,0.3-1.6,0.9-2.1l1-1C19.3,2.3,17.7,2,16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14 c0-1.7-0.3-3.3-0.9-4.9L28.1,12.1z"></path> </g></svg>
-                        <h3> Our Missions </h3> <br>
-                        <h4> To provide high quality eduaction that prepares studnets for outstanding achievement, creativity and ethical change. </h4>
-
+                    <div class="vcard">
+                        <div class="icon-wrapper">
+                            <svg fill="#0e6231" height="48px" width="48px" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.9,5.6C30.8,5.2,30.4,5,30,5h-3V2c0-0.4-0.2-0.8-0.6-0.9C26,0.9,25.6,1,25.3,1.3l-4,4C21.1,5.5,21,5.7,21,6v3.6l-5.7,5.7 c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.7-5.7H26c0.3,0,0.5-0.1,0.7-0.3l4-4C31,6.4,31.1,6,30.9,5.6z"></path>
+                                <path d="M18.1,18.1C17.6,18.7,16.8,19,16,19s-1.6-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.8-2.8C16.5,11,16.2,11,16,11 c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5c0-0.2,0-0.5-0.1-0.7L18.1,18.1z"></path>
+                                <path d="M28.1,12.1C27.6,12.7,26.8,13,26,13h-2.8l-0.7,0.7c0.3,0.7,0.4,1.5,0.4,2.3c0,3.9-3.1,7-7,7s-7-3.1-7-7s3.1-7,7-7 c0.8,0,1.6,0.2,2.3,0.4L19,8.8V6c0-0.8,0.3-1.6,0.9-2.1l1-1C19.3,2.3,17.7,2,16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14 c0-1.7-0.3-3.3-0.9-4.9L28.1,12.1z"></path>
+                            </svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To provide high quality education that prepares students for outstanding achievement, creativity, and ethical change.</p>
                     </div>
 
-                    <div class="about-cont-2-2-3">
-
-                        <svg width="95px" height="95px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>diamond</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Combined-Shape" fill="#000000" transform="translate(42.666667, 85.333333)"> <path d="M341.333333,1.42108547e-14 L426.666667,106.666667 L213.333333,394.666667 L7.10542736e-15,106.666667 L85.3333333,1.42108547e-14 L341.333333,1.42108547e-14 Z M262.563,122.666 L164.103,122.666 L213.333333,314.666667 L262.563,122.666 Z M127.703,122.666 L64.539,122.666 L184.306,302.462 L127.703,122.666 Z M362.105,122.666 L298.962,122.666 L242.395,302.349 L362.105,122.666 Z M168.889,42.666 L105.813333,42.6666667 L67.404,90.666 L134.222,90.666 L168.889,42.666 Z M224,42.666 L202.666,42.666 L170.667,90.666 L255.999,90.666 L224,42.666 Z M320.832,42.6666667 L257.777,42.666 L292.443,90.666 L359.241,90.666 L320.832,42.6666667 Z"> </path> </g> </g> </g></svg>
-                        <h3> Our Values </h3> <br>
-                         
-                        <h4>
-                            <ul>
-                                <li> &#11049; Creativity</li>
-                                <li> &#11049; Compassion</li>
-                                <li> &#11049; Discipline</li>
-                                <li> &#11049; Effectiveness</li>
-                                <li> &#11049; Efficiency</li>
-                                <li> &#11049; Excellence</li>
-                                <li> &#11049; Integrity</li>
-                            </ul>
-                        </h4>
-                        
+                    <div class="vcard">
+                        <div class="icon-wrapper">
+                            <svg width="48px" height="48px" viewBox="0 0 512 512" fill="#0e6231" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M341.333333,1.42108547e-14 L426.666667,106.666667 L213.333333,394.666667 L7.10542736e-15,106.666667 L85.3333333,1.42108547e-14 L341.333333,1.42108547e-14 Z M262.563,122.666 L164.103,122.666 L213.333333,314.666667 L262.563,122.666 Z M127.703,122.666 L64.539,122.666 L184.306,302.462 L127.703,122.666 Z M362.105,122.666 L298.962,122.666 L242.395,302.349 L362.105,122.666 Z M168.889,42.666 L105.813333,42.6666667 L67.404,90.666 L134.222,90.666 L168.889,42.666 Z M224,42.666 L202.666,42.666 L170.667,90.666 L255.999,90.666 L224,42.666 Z M320.832,42.6666667 L257.777,42.666 L292.443,90.666 L359.241,90.666 L320.832,42.6666667 Z" transform="translate(42.666667, 85.333333)"></path>
+                            </svg>
+                        </div>
+                        <h3>Our Values</h3>
+                        <ul class="values-list">
+                            <li><span>&#10003;</span> Creativity</li>
+                            <li><span>&#10003;</span> Compassion</li>
+                            <li><span>&#10003;</span> Discipline</li>
+                            <li><span>&#10003;</span> Effectiveness</li>
+                            <li><span>&#10003;</span> Efficiency</li>
+                            <li><span>&#10003;</span> Excellence</li>
+                            <li><span>&#10003;</span> Integrity</li>
+                        </ul>
                     </div>
 
                 </div>
-            </div>
-            <br>
-            <div class="about-cont-3">
+            </section>
 
+            <!-- Media/Video Showcase -->
+            <section class="about-cont-3">
                 <div class="about-cont-3-1">
-                    <h3> Explore more </h3>
-                    <br> 
+                    <h3>Explore More About Higa</h3>
+                    <div class="section-divider"></div>
                 </div>
-
 
                 <div class="iframe-container"> 
-                    <iframe class="responsive-iframe1" src="https://www.youtube.com/embed/WJ1dngMtxvI?si=naiu0Y6NXHi3KlP_"></iframe>
+                    <iframe class="responsive-iframe1" src="https://www.youtube.com/embed/WJ1dngMtxvI?si=naiu0Y6NXHi3KlP_" title="School Video" allowfullscreen></iframe>
                 </div>
-                
+            </section>
 
-            </div>
+            <!-- Campus Photo Gallery Grid -->
+            <section class="about-cont-4">
+                <div class="gallery-item"><img src="./Higa web resource/Abt1.jpg" alt="Campus View 1"></div>
+                <div class="gallery-item"><img src="./Higa web resource/Abt2.jpg" alt="Campus View 2"></div>
+                <div class="gallery-item"><img src="./Higa web resource/Abt3.jpg" alt="Campus View 3"></div>
+                <div class="gallery-item"><img src="./Higa web resource/Abt4.jpg" alt="Campus View 4"></div>
+            </section>
 
-            <div class="about-cont-4">
-                <div>
-                    <img src="./Higa web resource/pexels-hai-nguyen-825252-1699419.jpg" alt="">
-                </div>
-
-                <div>
-                    <img src="./Higa web resource/pexels-linkedin-2182970.jpg" alt="">
-                </div>
-
-                <div>
-                    <img src="./Higa web resource/pexels-max-fischer-5212321.jpg" alt="">
-                </div>
-
-                <div>
-                    <img src="./Higa web resource/pexels-sora-shimazaki-5668886.jpg" alt="">
-                </div>
-            </div>
         </div>
-
 
     </main>
 
-    <!-- this is the footer part -->
-
+    <!-- Footer -->
     <footer>
-
         <div class="fot-1">
-
             <div class="fot-1-1">
-                <img src="./Higa web resource/small logo.png" alt="" width="70px">
-                <h3> Higa Model Boarding School</h3>
-                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="" width="70px">
+                <img src="./Higa web resource/small logo.png" alt="Logo" width="65px">
+                <h3>Higa Model Boarding School</h3>
+                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="Gogota Logo" width="65px">
             </div>
 
             <div class="fot-1-2">
                 <p>
-                    Higa Model Boarding School is a project of Gogota care, not-for-profit organization. Higa Model Boarding School is one of the highest achieving secondary school in Central Ethiopia, Ethiopia. Our school is knows by its model students in our school and qualified teaching-learning activities with qualified teachers in our zone.
+                    Higa Model Boarding School is a project of Gogota Care, a non-profit organization. We are one of the highest achieving secondary schools in Central Ethiopia, known for our dedicated teachers and high academic standards.
                 </p>
             </div>
-
         </div>
 
         <div class="fot-cont">
-
-            
-
             <div class="fot-2 fot">
-                <h4> About us </h4>
-
-                <p> <a href="#"> Who are we? </a></p>
-                <p> <a href="#"> Our History </a></p>
-                <p> <a href="#"> Mission </a> </p>
-                <p> <a href="#"> Vision </a></p>
-                <p> <a href="#"> Values </a></p>
+                <h4>About us</h4>
+                <p><a href="#">Who are we?</a></p>
+                <p><a href="#">Our History</a></p>
+                <p><a href="#">Mission</a></p>
+                <p><a href="#">Vision</a></p>
+                <p><a href="#">Values</a></p>
             </div>
 
             <div class="fot-3 fot">
-                <h4> Academics </h4>
-
-                <p> <a href="#"> Our School </a> </p>
-                <p> <a href="#"> Academic focus </a></p>
-                <p> <a href="#"> Curriculum </a> </p>
-                <p> <a href="#"> Our students </a> </p>
-                <p> <a href="#"> Beyond our Academics </a></p>
+                <h4>Academics</h4>
+                <p><a href="#">Our School</a></p>
+                <p><a href="#">Academic Focus</a></p>
+                <p><a href="#">Curriculum</a></p>
+                <p><a href="#">Our Students</a></p>
+                <p><a href="#">Beyond Academics</a></p>
             </div>
 
             <div class="fot-4 fot">
-                <h4> Discover our school </h4>
-
-                <p> <a href="#"> achievements</a> </p>
-                <p> <a href="#"> recent news </a></p>
-
-                
+                <h4>Discover</h4>
+                <p><a href="#">Achievements</a></p>
+                <p><a href="#">Recent News</a></p>
             </div>
         </div>
 
         <div class="fot-5">
-
-            <h4> Get us on </h4>
-            <a href="#" class="fot2">
-                <svg width="35px" height="35px" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>email [#1572]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" id="email-[#1572]"> </path> </g> </g> </g> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>telegram</title> <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path> </g></svg>
-            </a>
-
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+                <a href="#" class="fot2" title="Email Us">
+                    <svg width="28px" height="28px" viewBox="0 -2.5 20 20" fill="#ffffff"><g><path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" transform="translate(-284.000000, -762.000000)"></path></g></svg>
+                </a>
+                <a href="#" class="fot2" title="Facebook">
+                    <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 24 24"><path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path></svg>
+                </a>
+                <a href="#" class="fot2" title="Telegram">
+                    <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 32 32"><path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path></svg>
+                </a>
+            </div>
         </div>
 
-        <br> <br>
-
-        <p class="copyright"> &copy; 2025 Higa Model Boarding School. All rights reserved.</p>
-
+        <p class="copyright">&copy; 2025 Higa Model Boarding School. All rights reserved.</p>
     </footer>
 
-    
 </body>
 </html>

@@ -1,70 +1,57 @@
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    // Navigation Drawer Toggle
     const menuButton = document.querySelector('.menu-button');
     const closeButton = document.querySelector('.close-button');
     const sideBarContainer = document.querySelector('.side-bar-container');
 
-    // Function to show sidebar and swap buttons
-    function openSidebar() {
-        sideBarContainer.style.display = 'flex';
-        menuButton.style.display = 'none';
-        closeButton.style.display = 'block';
+    if (menuButton && closeButton && sideBarContainer) {
+        menuButton.addEventListener('click', () => {
+            sideBarContainer.style.display = 'flex';
+            menuButton.style.display = 'none';
+            closeButton.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', () => {
+            sideBarContainer.style.display = 'none';
+            menuButton.style.display = 'block';
+            closeButton.style.display = 'none';
+        });
     }
 
-    // Function to hide sidebar and swap buttons back
-    function closeSidebar() {
-        sideBarContainer.style.display = 'none';
-        menuButton.style.display = 'block';
-        closeButton.style.display = 'none';
-    }
-
-    // Add event listeners to buttons
-    menuButton.addEventListener('click', openSidebar);
-    closeButton.addEventListener('click', closeSidebar);
-});
-
-// Slide show code 
-
-document.addEventListener("DOMContentLoaded", function() {
+    // Slideshow Logic
     let slideIndex = 0;
     const slides = document.querySelectorAll('.simage');
-    const totalSlides = slides.length;
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
 
-    function showSlides(index) {
-        if (index >= totalSlides) {
-            slideIndex = 0;
-        } else if (index < 0) {
-            slideIndex = totalSlides - 1;
-        } else {
-            slideIndex = index;
-        }
+    function showSlide(index) {
+        if (!slides.length) return;
+        
+        if (index >= slides.length) slideIndex = 0;
+        else if (index < 0) slideIndex = slides.length - 1;
+        else slideIndex = index;
 
         slides.forEach((slide, i) => {
             slide.style.display = (i === slideIndex) ? 'block' : 'none';
         });
     }
 
-    function nextSlide() {
-        showSlides(slideIndex + 1);
+    if (slides.length > 0) {
+        showSlide(slideIndex);
+        let autoSlide = setInterval(() => showSlide(slideIndex + 1), 5000);
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                clearInterval(autoSlide);
+                showSlide(slideIndex - 1);
+                autoSlide = setInterval(() => showSlide(slideIndex + 1), 5000);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                clearInterval(autoSlide);
+                showSlide(slideIndex + 1);
+                autoSlide = setInterval(() => showSlide(slideIndex + 1), 5000);
+            });
+        }
     }
-
-    function prevSlide() {
-        showSlides(slideIndex - 1);
-    }
-
-    function plusSlides(n) {
-        showSlides(slideIndex + n);
-    }
-
-    // Automatic slideshow
-    setInterval(nextSlide, 5000);
-
-    // Show the first slide initially
-    showSlides(slideIndex);
-
-    // Attach event listeners for the navigation buttons
-    document.querySelector('.prev').addEventListener('click', prevSlide);
-    document.querySelector('.next').addEventListener('click', nextSlide);
 });

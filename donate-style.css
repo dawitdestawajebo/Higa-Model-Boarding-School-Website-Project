@@ -1,118 +1,261 @@
+:root {
+    --primary-color: #1b5e20;
+    --primary-light: #e8f5e9;
+    --primary-hover: #144817;
+    --text-main: #2c3e50;
+    --text-muted: #555555;
+    --card-bg: #ffffff;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.06);
+    --radius-md: 10px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-.donate-header {
-    padding: 2em;
-    color:  white;
-    background-color: green;
-    text-align: center;
-    margin: 0;
-
-}
-.donate-header>h1 , .donate-header>p {
-    margin: 0.6px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-
-header h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-}
-.donation-section {
-    background: #fff;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.donation-section h2 {
-    color: #333;
-}
-.donation-section p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fbf9;
+    color: var(--text-main);
     line-height: 1.6;
 }
-.bank-details, .contact-details {
-    background: #e0ffdf;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-.bank-details p, .contact-details p {
-    margin: 0.5em 0;
+
+/* Navbar Donate Button Explicit Styling */
+.nav-container .items button,
+.side-bar-container .items button {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    border: none;
+    padding: 0.6em 1.4em;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-hr {
-    opacity: 0.2;
-    margin: 1em 0 1em 0;
+.nav-container .items button:hover,
+.side-bar-container .items button:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
 }
-.donate-1 {
-    background-color: green;
-    color: white;
-    width: 100%;
-    margin-top: 5em ;
-}
-.donate-1-1 {
-    width: 80%;
-    margin: auto;
-    padding: 2em 20px 1em 20px;
-}
-.donate-1-1 div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.donate-1-1 div p {
-    width: 90%;
-}
-.sec-1, .sec-2 {
-    display: flex;
-    flex-direction: row;
-}
-.sec-1 h2, .sec-2 h2 {
-    margin-left: 0.6em;
-}
-.donate-1-1 h2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.donate-1-1 h2 svg {
-    margin-right: 0.5em;
-    display: none;
-}
-@media screen and (max-width:700px) {
 
-    .donate-1-1 {
-        width: 95%;
+/* Header Banner */
+.donate-header {
+    padding: 3.5em 1em;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary-color), #2e7d32);
+    text-align: center;
+}
+
+.donate-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.donate-header p {
+    font-size: 1.15rem;
+    opacity: 0.92;
+}
+
+/* Page Layout */
+.container {
+    width: 88%;
+    max-width: 1100px;
+    margin: 2.5em auto;
+}
+
+/* Card Sections */
+.donation-section {
+    background: var(--card-bg);
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+}
+
+.sec-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    margin-bottom: 1em;
+}
+
+.sec-header h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+/* Financial Bank Cards Grid */
+.bank-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2em;
+    margin-top: 1.5em;
+}
+
+/* Base Bank Card */
+.bank-card {
+    position: relative;
+    background-color: var(--card-bg);
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid var(--primary-color);
+    padding: 1.5em;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 1;
+}
+
+/* Watermark Background Overlay */
+.bank-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: right -15px bottom -15px;
+    background-size: 140px;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+.bank-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CBE Background Styling */
+.bank-card.cbe-card {
+    border-left-color: #5c2d91;
+}
+.bank-card.cbe-card::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Commercial_Bank_of_Ethiopia_logo.png');
+}
+
+/* Bank of Abyssinia Background Styling */
+.bank-card.boa-card {
+    border-left-color: #fdb913;
+}
+.bank-card.boa-card::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/2/29/Bank_of_Abyssinia_logo.png');
+}
+
+/* Dashen Bank Background Styling */
+.bank-card.dashen-card {
+    border-left-color: #004b87;
+}
+.bank-card.dashen-card::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/9/91/Dashen_Bank_logo.png');
+}
+
+.bank-card h3 {
+    color: var(--text-main);
+    font-size: 1.15rem;
+    margin-bottom: 0.6em;
+}
+
+.bank-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0.3em 0;
+}
+
+.bank-card span {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Contact Info Card */
+.contact-card {
+    background-color: var(--primary-light);
+    border: 1px solid #c8e6c9;
+    padding: 1.2em;
+    margin-top: 1.2em;
+    border-radius: 6px;
+}
+
+.contact-card p {
+    margin: 0.4em 0;
+    font-size: 1rem;
+}
+
+/* Impact Banner */
+.donate-banner {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 3em 1em;
+    margin-top: 3em;
+}
+
+.donate-banner-inner {
+    width: 88%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    margin-bottom: 1em;
+}
+
+.banner-title h2 {
+    font-size: 1.8rem;
+}
+
+.banner-body {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.banner-body p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.desktop-icon {
+    flex-shrink: 0;
+}
+
+/* Google Map Embed */
+#map-container {
+    width: 88%;
+    max-width: 1100px;
+    margin: 2.5em auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+#map-container iframe {
+    display: block;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .container, #map-container, .donate-banner-inner {
+        width: 92%;
     }
-    .donate-1-1 div {
-        flex-direction: column;
+
+    .donate-header h1 {
+        font-size: 1.8rem;
     }
-    .donate-1-1 div svg {
+
+    .desktop-icon {
         display: none;
     }
-    .donate-1-1 h2 svg {
-        display: block;
-    }
-    .donate-1-1 div p {
-        width: 100%;
+
+    .donation-section {
+        padding: 1.5em;
     }
 }
-
-
-

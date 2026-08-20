@@ -1,32 +1,22 @@
-// donate part 
+document.addEventListener("DOMContentLoaded", () => {
+    const sideBar = document.querySelector(".side-bar-container");
+    const menuBtn = document.querySelector(".menu-button");
+    const closeBtn = document.querySelector(".close-button");
 
-function goToDonatePage() {
-    window.location.href = 'donate.html'
-}
+    // Open Mobile Menu
+    menuBtn.addEventListener("click", () => {
+        sideBar.style.display = "flex";
+        menuBtn.style.display = "none";
+        closeBtn.style.display = "block";
+    });
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const menuButton = document.querySelector('.menu-button');
-    const closeButton = document.querySelector('.close-button');
-    const sideBarContainer = document.querySelector('.side-bar-container');
-
-    // Function to show sidebar and swap buttons
-    function openSidebar() {
-        sideBarContainer.style.display = 'flex';
-        menuButton.style.display = 'none';
-        closeButton.style.display = 'block';
-    }
-
-    // Function to hide sidebar and swap buttons back
-    function closeSidebar() {
-        sideBarContainer.style.display = 'none';
-        menuButton.style.display = 'block';
-        closeButton.style.display = 'none';
-    }
-
-    // Add event listeners to buttons
-    menuButton.addEventListener('click', openSidebar);
-    closeButton.addEventListener('click', closeSidebar);
+    // Close Mobile Menu
+    closeBtn.addEventListener("click", () => {
+        sideBar.style.display = "none";
+        closeBtn.style.display = "none";
+        menuBtn.style.display = "block";
+    });
 });
+function goToDonatePage() {
+    window.location.href = "donate.html";
+}

@@ -3,242 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Higa Model Boarding School </title>
+    <title>Donate | Higa Model Boarding School</title>
     <link rel="stylesheet" href="donate-style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
-
-    <script src="navbar.js"></script>
-    <style>
-    </style>
+    <script src="navbar.js" defer></script>
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav class="nav-container">
         <ul class="nav-items">
-    
-            <li class="items logo-item"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            <li class=" small-logo"> <a href="index.html"> <img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt=""> </a> </li>
-            
-    
-            <li class="items about-container max-items"> 
-    
-                <a href="about.html"> About us </a>
-                
+            <li class="items logo-item">
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="HMBS Logo"></a>
             </li>
-    
-            <li class="items max-items"> <a href="academics.html"> Academics </a> </li>
-    
-            <li class="items gallery-container max-items"> 
-    
-                <a href="students.html"> Students </a> 
-    
+            <li class="small-logo">
+                <a href="index.html"><img src="./Higa web resource/Picsart_24-09-14_15-32-19-615.png" alt="HMBS Logo"></a>
             </li>
-    
-            <li class="items max-items"> <a href="contact.html"> Contact us </a> </li>
-    
-            <li class="items max-items"> <button onclick="goToDonatePage()"> Donate </button> </li>
-    
+            <li class="items about-container max-items"><a href="about.html">About us</a></li>
+            <li class="items max-items"><a href="academics.html">Academics</a></li>
+            <li class="items gallery-container max-items"><a href="students.html">Students</a></li>
+            <li class="items max-items"><a href="contact.html">Contact us</a></li>
+            <li class="items max-items"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
+
             <svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            
-    
         </ul>
-    
-        <!-- This is code fot navbar of the smaller devices -->
-    
+
+        <!-- Mobile Sidebar -->
         <ul class="side-bar-container">
-    
-            <li class="side-items "> <a href="about.html"> About us </a> </li>
-    
-            <li class="side-items "> <a href="academics.html"> Academics </a> </li>
-    
-            <li class="side-items "> <a href="students.html"> Students </a> </li>
-    
-            <li class="side-items "> <a href="contact.html"> Contact us </a> </li>
-    
-            <li class=" items donate-button"> <button onclick="goToDonatePage()"> Donate </button> </li>
+            <li class="side-items"><a href="about.html">About us</a></li>
+            <li class="side-items"><a href="academics.html">Academics</a></li>
+            <li class="side-items"><a href="students.html">Students</a></li>
+            <li class="side-items"><a href="contact.html">Contact us</a></li>
+            <li class="side-items donate-button"><button class="btn-donate" onclick="goToDonatePage()">Donate</button></li>
         </ul>
     </nav>
-    
 
+    <!-- Header Section -->
+    <header class="donate-header">
+        <h1>Support the School</h1>
+        <p>Support Education, Change Lives</p>
+    </header>
 
-
-
-
-    <div class="donate-header">
-        <h1> Support the school </h1>
-        <p>Support Education, Change Lives </p>
-    </div>
-
-
-    <div class="container">
-
-
-        <div class="donation-section">
-
-
-            <div class="sec-1">
-                <svg fill="#000000" width="64px" height="64px" viewBox="-51.2 -51.2 614.40 614.40" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 416c114.9 0 208-93.1 208-208S370.9 0 256 0 48 93.1 48 208s93.1 208 208 208zM233.8 97.4V80.6c0-9.2 7.4-16.6 16.6-16.6h11.1c9.2 0 16.6 7.4 16.6 16.6v17c15.5.8 30.5 6.1 43 15.4 5.6 4.1 6.2 12.3 1.2 17.1L306 145.6c-3.8 3.7-9.5 3.8-14 1-5.4-3.4-11.4-5.1-17.8-5.1h-38.9c-9 0-16.3 8.2-16.3 18.3 0 8.2 5 15.5 12.1 17.6l62.3 18.7c25.7 7.7 43.7 32.4 43.7 60.1 0 34-26.4 61.5-59.1 62.4v16.8c0 9.2-7.4 16.6-16.6 16.6h-11.1c-9.2 0-16.6-7.4-16.6-16.6v-17c-15.5-.8-30.5-6.1-43-15.4-5.6-4.1-6.2-12.3-1.2-17.1l16.3-15.5c3.8-3.7 9.5-3.8 14-1 5.4 3.4 11.4 5.1 17.8 5.1h38.9c9 0 16.3-8.2 16.3-18.3 0-8.2-5-15.5-12.1-17.6l-62.3-18.7c-25.7-7.7-43.7-32.4-43.7-60.1.1-34 26.4-61.5 59.1-62.4zM480 352h-32.5c-19.6 26-44.6 47.7-73 64h63.8c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8h63.8c-28.4-16.3-53.3-38-73-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32z"></path></g></svg>
-                <h2> Donate Money </h2>
+    <!-- Main Content Container -->
+    <main class="container">
+        
+        <!-- Financial Donation Section -->
+        <section class="donation-section">
+            <div class="sec-header">
+                <svg fill="#1b5e20" width="48px" height="48px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 416c114.9 0 208-93.1 208-208S370.9 0 256 0 48 93.1 48 208s93.1 208 208 208zM233.8 97.4V80.6c0-9.2 7.4-16.6 16.6-16.6h11.1c9.2 0 16.6 7.4 16.6 16.6v17c15.5.8 30.5 6.1 43 15.4 5.6 4.1 6.2 12.3 1.2 17.1L306 145.6c-3.8 3.7-9.5 3.8-14 1-5.4-3.4-11.4-5.1-17.8-5.1h-38.9c-9 0-16.3 8.2-16.3 18.3 0 8.2 5 15.5 12.1 17.6l62.3 18.7c25.7 7.7 43.7 32.4 43.7 60.1 0 34-26.4 61.5-59.1 62.4v16.8c0 9.2-7.4 16.6-16.6 16.6h-11.1c-9.2 0-16.6-7.4-16.6-16.6v-17c-15.5-.8-30.5-6.1-43-15.4-5.6-4.1-6.2-12.3-1.2-17.1l16.3-15.5c3.8-3.7 9.5-3.8 14-1 5.4 3.4 11.4 5.1 17.8 5.1h38.9c9 0 16.3-8.2 16.3-18.3 0-8.2-5-15.5-12.1-17.6l-62.3-18.7c-25.7-7.7-43.7-32.4-43.7-60.1.1-34 26.4-61.5 59.1-62.4zM480 352h-32.5c-19.6 26-44.6 47.7-73 64h63.8c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8h63.8c-28.4-16.3-53.3-38-73-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32z"></path></svg>
+                <h2>Donate Money</h2>
             </div>
-            <p>If you would like to donate money, you can use the following bank accounts:</p>
+            <p>If you would like to make a monetary contribution, please use any of the official bank accounts below:</p>
 
+            <div class="bank-grid">
+                <div class="bank-card cbe-card">
+                    <h3>Commercial Bank of Ethiopia (CBE)</h3>
+                    <p><span>Account Name:</span> HMBS</p>
+                    <p><span>Account No:</span> ---</p>
+                    <p><span>SWIFT Code:</span> CBETETAA</p>
+                </div>
 
-            <div class="bank-details">
-                <p><strong>Commercial Bank of Ethiopia (CBE)</strong></p>
-                <p>Account Name: HMBS</p>
-                <p>Account Number: 10003838293</p>
-                <p>SWIFT Code: CBE</p> <hr>
+                <div class="bank-card boa-card">
+                    <h3>Bank of Abyssinia</h3>
+                    <p><span>Account Name:</span> HMBS</p>
+                    <p><span>Account No:</span> ---</p>
+                    <p><span>SWIFT Code:</span> ABYSIETTA</p>
+                </div>
 
-                <p><strong>Abysinnia Bank</strong></p>
-                <p>Account Name: HMBS</p>
-                <p>Account Number: 2947183</p>
-                <p>SWIFT Code: ABYSIETTA</p><hr>
-
-                <p><strong>Dashen Bank</strong></p>
-                <p>Account Name: HMBS</p>
-                <p>Account Number: 100038472930</p>
-                <p>SWIFT Code: DASHEN</p><hr>
+                <div class="bank-card dashen-card">
+                    <h3>Dashen Bank</h3>
+                    <p><span>Account Name:</span> HMBS</p>
+                    <p><span>Account No:</span> ---</p>
+                    <p><span>SWIFT Code:</span> DASHETAA</p>
+                </div>
             </div>
+        </section>
 
-
-        </div>
-
-
-        <div class="donation-section">
-
-            <div class="sec-2">
-                <svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.002 512.002" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M332.172,169.859v31.062h31.819c2.392,0,3.681-2.661,3.681-5.053v-26.009H332.172z"></path> </g> </g> <g> <g> <path d="M377.761,92.204h-25.009c1.274-0.958,2.398-1.904,3.286-2.791c8.822-8.824,8.822-23.179,0-32.002 c-8.843-8.844-23.157-8.845-32.002,0c-2.21,2.21-4.565,5.506-6.667,9.218c-2.101-3.711-4.457-7.007-6.667-9.218 c-8.843-8.842-23.157-8.845-32.002,0c-8.844,8.843-8.846,23.157,0,32.003c0.888,0.888,2.012,1.832,3.285,2.79h-25.356 c-2.392,0-4.332,1.939-4.332,4.332v17.962c0.002,2.392,1.941,4.331,4.333,4.331h10.09v23.297h35.5v-23.297h29.953v23.297h35.5 v-23.297h10.09c2.392,0,4.332-1.939,4.332-4.332V96.536C382.093,94.144,380.153,92.204,377.761,92.204z M310.175,88.843 c-0.204,0.032-0.498,0.06-0.9,0.06c-6.14,0-17.079-5.756-20.693-9.372c-3.384-3.38-3.386-8.855-0.001-12.24 c3.383-3.382,8.856-3.381,12.24,0C306,72.472,310.995,85.07,310.175,88.843z M346.156,79.534 c-3.615,3.615-14.554,9.372-20.694,9.372c-0.402,0-0.694-0.028-0.9-0.06c-0.82-3.774,4.175-16.373,9.354-21.553 c3.382-3.382,8.856-3.382,12.24,0C349.531,70.668,349.531,76.159,346.156,79.534z"></path> </g> </g> <g> <g> <path d="M307.855,169.651c-5.941-9.529-18.482-12.437-28.011-6.499l-29.62,18.464c-0.101-20.135-0.08-15.777-0.182-36.025 c-0.133-26.398-21.718-47.876-48.118-47.876c-14.57,0-98.733,0-109.158,0c-26.4,0-47.984,21.477-48.118,47.877l-0.75,149.379 c-0.057,11.229,9.001,20.378,20.23,20.435c0.034,0,0.069,0,0.104,0c11.005,0,20.274-8.919,20.331-20.23 c0.019-3.666,0.747-148.7,0.75-149.379c0.011-2.165,1.772-3.913,3.936-3.907c2.164,0.006,3.915,1.763,3.915,3.927 c0.001,50.886,0.009,341.786,0.009,341.786c0,13.475,10.924,24.4,24.399,24.4c13.454,0,24.4-10.915,24.4-24.399V292.571h10.535 V487.6c0,13.475,10.924,24.4,24.399,24.4c13.469,0,24.399-10.918,24.399-24.399c0-318.482-0.432-143.836-0.443-341.772 c0-2.343,1.895-4.246,4.238-4.256c2.343-0.01,4.254,1.877,4.273,4.221c0.037,7.18,0.327,65.186,0.364,72.444 c0.037,7.368,4.058,14.141,10.51,17.701c6.465,3.567,14.339,3.343,20.579-0.548l60.528-37.729 C310.886,191.721,313.796,179.18,307.855,169.651z"></path> </g> </g> <g> <g> <path d="M147.518,0c-23.282,0-42.14,18.874-42.14,42.14c0,23.282,18.87,42.141,42.14,42.141c23.248,0,42.14-18.827,42.14-42.141 C189.658,18.871,170.796,0,147.518,0z"></path> </g> </g> <g> <g> <path d="M303.367,352.785c-4.039,0-6.364,2.203-6.364,7.038v17.073c0,4.833,2.325,7.037,6.364,7.037 c3.977,0,6.425-2.203,6.425-7.037v-17.073C309.792,354.989,307.344,352.785,303.367,352.785z"></path> </g> </g> <g> <g> <polygon points="375.461,355.784 370.137,374.57 380.785,374.57 "></polygon> </g> </g> <g> <g> <path d="M268.361,352.785h-6.364v30.78h6.364c4.039,0,6.425-2.264,6.425-7.038v-16.706 C274.786,355.049,272.399,352.785,268.361,352.785z"></path> </g> </g> <g> <g> <path d="M447.897,259.861H251.231c-11.16,0-20.207,9.047-20.207,20.207v173.489c0,11.16,9.047,20.207,20.207,20.207h11.802v29.225 c0,4.977,4.035,9.011,9.011,9.011h19.696c4.977,0,9.011-4.035,9.011-9.011v-29.225h97.624v29.225c0,4.977,4.035,9.011,9.011,9.011 h19.696c4.977,0,9.011-4.035,9.011-9.011v-29.225h11.803c11.16,0,20.207-9.047,20.207-20.207V280.068 C468.104,268.907,459.057,259.861,447.897,259.861z M282.74,376.528c0,10.219-6.302,14.013-14.38,14.013h-10.832 c-2.08,0-3.488-1.163-3.488-2.448v-39.836c0-1.286,1.408-2.448,3.488-2.448h10.832c8.077,0,14.38,3.794,14.38,14.013V376.528z M317.747,376.895c0,10.219-6.303,14.013-14.381,14.013s-14.32-3.794-14.32-14.013v-17.073c0-10.219,6.241-14.013,14.32-14.013 s14.381,3.794,14.381,14.013V376.895z M350.245,390.541c-1.897,0-3.549-0.612-4.589-2.509L332.5,363.433v24.599 c0,1.652-2.019,2.509-3.977,2.509c-2.019,0-3.977-0.856-3.977-2.509v-39.714c0-1.714,1.958-2.509,3.977-2.509 c2.877,0,4.039,0.612,5.936,4.222l11.808,22.826v-24.599c0-1.714,1.958-2.448,3.977-2.448c1.958,0,3.977,0.734,3.977,2.448v39.774 h0.001C354.222,389.684,352.203,390.541,350.245,390.541z M387.516,390.541c-1.346,0-2.386-0.428-2.692-1.591l-2.325-8.138 h-14.012l-2.325,8.138c-0.306,1.163-1.347,1.591-2.692,1.591c-2.142,0-5.018-1.346-5.018-3.305c0-0.122,0.061-0.367,0.122-0.612 l11.81-38.49c0.55-1.836,2.814-2.692,5.079-2.692c2.325,0,4.589,0.856,5.14,2.692l11.81,38.49 c0.061,0.245,0.122,0.428,0.122,0.612C392.534,389.135,389.658,390.541,387.516,390.541z M418.607,352.968h-8.934v35.064 c0,1.652-2.019,2.509-3.977,2.509c-2.019,0-3.977-0.856-3.977-2.509v-35.064h-8.996c-1.591,0-2.508-1.652-2.508-3.61 c0-1.713,0.795-3.549,2.508-3.549h25.885c1.713,0,2.509,1.836,2.509,3.549C421.117,351.255,420.198,352.968,418.607,352.968z M442.722,365.022v0.002c1.592,0,2.509,1.53,2.509,3.182c0,1.408-0.795,3.06-2.509,3.06h-9.301v12.299h17.317 c1.591,0,2.509,1.652,2.509,3.549c0,1.652-0.795,3.427-2.509,3.427h-21.785c-1.775,0-3.488-0.856-3.488-2.509v-39.714 c0-1.653,1.713-2.509,3.488-2.509h21.785c1.713,0,2.509,1.775,2.509,3.427c0,1.897-0.919,3.549-2.509,3.549h-17.317v12.239 H442.722z"></path> </g> </g> </g></svg>
-                <h2> Donate Materials </h2>
+        <!-- Material Donation Section -->
+        <section class="donation-section">
+            <div class="sec-header">
+                <svg fill="#1b5e20" height="48px" width="48px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M447.897,259.861H251.231c-11.16,0-20.207,9.047-20.207,20.207v173.489c0,11.16,9.047,20.207,20.207,20.207h11.802v29.225c0,4.977,4.035,9.011,9.011,9.011h19.696c4.977,0,9.011-4.035,9.011-9.011v-29.225h97.624v29.225c0,4.977,4.035,9.011,9.011,9.011h19.696c4.977,0,9.011-4.035,9.011-9.011v-29.225h11.803c11.16,0,20.207-9.047,20.207-20.207V280.068C468.104,268.907,459.057,259.861,447.897,259.861z"/></svg>
+                <h2>Donate Materials</h2>
             </div>
 
-            <p>If you would like to help by donating materials or other items, please contact us using the following options:</p>
+            <p>If you prefer donating educational materials, computers, books, or physical equipment, please reach out directly:</p>
 
-
-            <div class="contact-details">
+            <div class="contact-card">
                 <p><strong>Email:</strong> hmbs@gmail.com</p>
-                <p><strong>Phone:</strong> 0912345678, 0998765432</p>
+                <p><strong>Phone:</strong> +251 912 345 678 / +251 998 765 432</p>
             </div>
+        </section>
 
-        </div>
-    </div>
+    </main>
 
-
-    <div class="donate-1">
-
-        <div class="donate-1-1">
-            <h2> 
-                <svg fill="#000000" width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z"></path></g></svg>
-                Why Donate ?
-            </h2>
-
-            <div>
-
-                <svg fill="#000000" width="120px" height="120px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z"></path></g></svg>
-            <p>
-                Your donation makes a real difference! Higa Model Boarding School, a project of the Kambata Development Association, provides quality education to talented students from underprivileged backgrounds. Many students face financial challenges that limit their access to education. Your support helps cover tuition, learning materials, and living expenses, ensuring they can focus on their studies without worry. By donating, you empower the next generation of leaders, helping them build a brighter future for themselves and their communities. Every contribution, big or small, brings hope and opportunity.
-            </p>
-
+    <!-- Impact Callout Banner -->
+    <section class="donate-banner">
+        <div class="donate-banner-inner">
+            <div class="banner-title">
+                <svg fill="#ffffff" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504z"/></svg>
+                <h2>Why Donate?</h2>
             </div>
-            
-            
-        </div>
-    </div>
-
-
-
-
-
-
-    
-
-    <footer>
-
-        <div class="fot-1">
-
-            <div class="fot-1-1">
-                <img src="./Higa web resource/small logo.png" alt="" width="70px">
-                <h3> Higa Model Boarding School</h3>
-                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="" width="70px">
-            </div>
-
-            <div class="fot-1-2">
+            <div class="banner-body">
+                <svg class="desktop-icon" fill="#ffffff" width="100px" height="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504z"/></svg>
                 <p>
-                    Higa Model Boarding School is a project of Gogota care, not-for-profit organization. Higa Model Boarding School is one of the highest achieving secondary school in Central Ethiopia, Ethiopia. Our school is knows by its model students in our school and qualified teaching-learning activities with qualified teachers in our zone.
+                    Your donation makes a real difference! Higa Model Boarding School provides quality education to talented students from underprivileged backgrounds. Many students face financial challenges that limit their access to resources. Your support helps cover tuition, learning materials, and living expenses—ensuring they can focus on their studies without worry. By donating, you empower the next generation of leaders to build a brighter future for their communities.
                 </p>
             </div>
+        </div>
+    </section>
 
+    <!-- Embedded Location Map -->
+    <section id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9381628450765!2d37.90774887413716!3d7.247878514323667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b181c96f3248c7%3A0xd7f003be595b7280!2sHiga%20model%20boarding%20school!5e0!3m2!1sen!2set!4v1736155271638!5m2!1sen!2set" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="fot-1">
+            <div class="fot-1-1">
+                <img src="./Higa web resource/small logo.png" alt="HMBS Small Logo" width="70px">
+                <h3>Higa Model Boarding School</h3>
+                <img src="./Higa web resource/gogota_logo pixelcut-export-removebg-preview.png" alt="Gogota Logo" width="70px">
+            </div>
+            <div class="fot-1-2">
+                <p>
+                    Higa Model Boarding School is a project of Gogota Care, a non-profit organization. We are dedicated to offering high-caliber education and empowering model secondary students in Central Ethiopia.
+                </p>
+            </div>
         </div>
 
         <div class="fot-cont">
-
-            
-
             <div class="fot-2 fot">
-                <h4> About us </h4>
-
-                <p> <a href="#"> Who are we? </a></p>
-                <p> <a href="#"> Our History </a></p>
-                <p> <a href="#"> Mission </a> </p>
-                <p> <a href="#"> Vision </a></p>
-                <p> <a href="#"> Values </a></p>
+                <h4>About us</h4>
+                <p><a href="about.html">Who are we?</a></p>
+                <p><a href="about.html">Our History</a></p>
+                <p><a href="about.html">Mission & Vision</a></p>
             </div>
 
             <div class="fot-3 fot">
-                <h4> Academics </h4>
-
-                <p> <a href="#"> Our School </a> </p>
-                <p> <a href="#"> Academic focus </a></p>
-                <p> <a href="#"> Curriculum </a> </p>
-                <p> <a href="#"> Our students </a> </p>
-                <p> <a href="#"> Beyond our Academics </a></p>
+                <h4>Academics</h4>
+                <p><a href="academics.html">Our School</a></p>
+                <p><a href="academics.html">Academic Focus</a></p>
+                <p><a href="academics.html">Curriculum</a></p>
             </div>
 
             <div class="fot-4 fot">
-                <h4> Discover our school </h4>
-
-                <p> <a href="#"> achievements</a> </p>
-                <p> <a href="#"> recent news </a></p>
-
-                
+                <h4>Discover</h4>
+                <p><a href="students.html">Achievements</a></p>
+                <p><a href="students.html">Students</a></p>
             </div>
         </div>
 
-        <div class="fot-5">
-
-            <h4> Get us on </h4>
-            <a href="#" class="fot2">
-                <svg width="35px" height="35px" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>email [#1572]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z" id="email-[#1572]"> </path> </g> </g> </g> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
-            </a>
-
-            <a href="#" class="fot2">
-                <svg fill="#ffffff" width="35px" height="35px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>telegram</title> <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path> </g></svg>
-            </a>
-
-        </div>
-
-        <br> <br>
-
-        <p class="copyright"> &copy; 2025 Higa Model Boarding School. All rights reserved.</p>
-
-<br> <br>
-
-      
-        
+        <p class="copyright">&copy; 2025 Higa Model Boarding School. All rights reserved.</p>
     </footer>
-      <!-- Google map here -->
-      <div id="map-container"> <!-- Google Map Embed Code --> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9381628450765!2d37.90774887413716!3d7.247878514323667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b181c96f3248c7%3A0xd7f003be595b7280!2sHiga%20model%20boarding%20school!5e0!3m2!1sen!2set!4v1736155271638!5m2!1sen!2set" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-
-
-
-
-
-
-
 
 </body>
 </html>

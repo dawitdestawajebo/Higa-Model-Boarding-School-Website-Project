@@ -1,140 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f8faf9;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+.academics-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
 .academics-header {
-    background-color: green;
-    color:  rgb(255, 255, 255);
-    padding: 2.6em;
-}
-.academics-header h1 {
     text-align: center;
+    margin: 30px 0 20px 0;
 }
-.academ-1-cont {
-    width: 100%;
-    margin-top: 3.5em;
-    margin-bottom: 2em;
-    background-color: rgb(245, 245, 245);
+
+.academics-header h1 {
+    font-size: 2.2em;
+    color: #1a202c;
+    font-weight: 700;
 }
-.academ-1 {
-    width: 94%;
-    margin-right: auto;
-    margin-left: auto;
+
+.heading-divider {
+    height: 4px;
+    width: 60px;
+    background-color: #0e6231;
+    margin: 12px auto 24px auto;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.academ-hero-container {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin-bottom: 40px;
+}
+
+.academ-hero {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    color: green;
-
-
-
-}
-.academ-1-1 {
-    width: 48%;
-}
-.academ-1-1 h2 {
-    display: none;
-}
-.academ-1-2 {
-    width: 48%;
-    height: auto;
-}
-.academ-1-2 img {
-    width: 100%;
-}
-
-
-.academ-2 {
-    width: 94%;
-    margin: 3em auto 3em auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-.com-2 {
-    width: 45%;
-    margin: 1em 0 1em 0;
-}
-.com-2 h2 {
-    margin-bottom: 0.5em;
+    gap: 35px;
 }
 
-.academ-3 {
+.academ-hero-text {
+    flex: 1;
+}
+
+.academ-hero-text h2 {
+    font-size: 1.35em;
+    color: #0e6231;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.academ-hero-text p {
+    font-size: 1em;
+    color: #4a5568;
+}
+
+.academ-hero-img {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.academ-hero-img img {
     width: 100%;
-    background-color: green;
-    color: white;
-}
-.academ-3-1 {
-    width: 94%;
-    margin: 1em auto 1em auto;
-    padding: 2em 0 3em 0;
-}
-.academ-3-1 h2 {
-    margin: 1em 0 1em 0;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.com-3 {
+/* 4-Card Academic Pillars Grid */
+.academ-grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.academ-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.academ-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.academ-card h3 {
+    color: #1a202c;
+    font-size: 1.25em;
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.academ-card h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 3px;
+    background-color: #0e6231;
+    border-radius: 2px;
+}
+
+.academ-card p {
+    font-size: 0.95em;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Gallery Strip */
+.academ-gallery-container {
+    margin-bottom: 50px;
+}
+
+.academ-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.gallery-frame {
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-frame img {
     width: 100%;
-}
-.academ-img {
-    width: 100%;
-    margin-bottom: 3.5em;
-
-}
-.academ-img-cont {
-    width: 94%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-.academ-img-cont div {
-    width: 24%;
-
-}
-.academ-img-cont div img {
-    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 1000px) {
-    .academ-1-1 h1 {
-        display: none;
+.gallery-frame img:hover {
+    transform: scale(1.05);
+}
 
-    }
-    .academ-1-1 h2 {
-        display: block;
-    }
-    .academ-1 {
+/* Beyond Academics Section */
+.academ-beyond-banner {
+    background-color: #0e6231;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(14, 98, 49, 0.2);
+}
+
+.beyond-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.beyond-content h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.section-divider-light {
+    height: 3px;
+    width: 50px;
+    background-color: #a7f3d0;
+    margin: 12px auto 20px auto;
+    border-radius: 2px;
+}
+
+.beyond-content p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #f0fdf4;
+}
+
+.beyond-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 900px) {
+    .academ-hero {
         flex-direction: column;
-        width: 90%;
-        justify-content: space-between;
     }
-    .academ-2, .academ-3-1, .academ-img-cont {
-        width: 90%;
+
+    .academ-grid-section {
+        grid-template-columns: 1fr;
     }
-    .academ-1-1, .academ-1-2 {
-        width: 100%;
-    }
-    .academ-1-1 {
-        margin-bottom: 4em;
-    }
-    .academ-img-cont {
-        flex-wrap: wrap;
-    }
-    .academ-img-cont div {
-        width: 48%;
-        margin-bottom: 1em;
+
+    .academ-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 700px) {
-    .academ-1, .academ-2, .academ-3-1, .academ-img-cont {
-        width: 80%;
+
+@media screen and (max-width: 600px) {
+    .academ-hero-container, .academ-beyond-banner {
+        padding: 22px;
     }
-    .academ-2{
-        flex-direction: column;
+
+    .academ-gallery-grid {
+        grid-template-columns: 1fr;
     }
-    .com-2 {
-        width: 100%;
+
+    .academics-header h1 {
+        font-size: 1.8em;
     }
-    
 }
